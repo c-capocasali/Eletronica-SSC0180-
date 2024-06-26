@@ -18,8 +18,10 @@ $\frac{V_E}{V_S} = \frac{N1}{N2}$  (i)
 
 Ou seja, a amplitude da onda é reduzida.
 
+É importante salientar que no Brasil, por padrão, a frequência da senoide é de $60Hz$
+
 #### Ponte Retificadora e Capacitor
-A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada em corrente contínua, ou seja, a tensão será sempre positiva.
+A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada(AC) em corrente contínua(DC), ou seja, a tensão será sempre positiva.
 
 (Mostrar gráfico)
 
@@ -52,13 +54,15 @@ A capacitância pode ser obtida através da seguinte equação:
 
 $C = \frac{I}{f \cdot V_{r}}$  (ii)
 
+Onde $I$ corresponde à corrente total do circuito. 
+
 
 Sabemos que $f = 120Hz$, pois durante o processo de retificação de onda, o período $T$ da onda é reduzido pela metade e, como $f = \frac{1}{T}$, a frequência após a retificação é $f = \frac{2}{T}$.
 
 ##### Calculo do Ripple
 Ainda para o cálculo da capacitância, devemos calcular a tensão ripple da função de onda. O ripple é, basicamente, a diferença entre a tensão máxima $V_{max}$ e tensão mínima $V_{min}$, contudo, uma maneira mais fácil de calcular a porcentagem relativa a tensão $V_{S'}$ que desejamos para o ripple. Para melhores resultados, queremos que o ripple não seja superior à 10% de $V_{S'}$. Logo: 
 
-$V_{r} = 0,1\cdotV'_{S} = 1,66V$  (iii)
+$V_{r} = 0,1 \cdot V'_{S} = 1,66V$  (iii)
 
 ##### Tensões Máxima e Mínima do Circuito 
 De posse da porcentagem que desejamos para o Ripple, podemos calcular também a tensão máxima e mínima do circuito, tal que: 
