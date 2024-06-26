@@ -8,7 +8,7 @@ O objetivo principal deste projeto foi construir uma fonte de tensão ajustável
 #### Tensão Alternada e Transformador
 Inicialmente, a tensão varia ao longo do tempo na forma de uma senoide:
 
-(Mostrar gráfico)
+imagens/senoide.jpeg
 
 Ao passar pelo transformador, a tensão é reduzida, respeitando a relação:
 
