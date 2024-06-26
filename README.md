@@ -1,66 +1,67 @@
 ## Projeto Fonte de Tensão Regulável
 
-### Objetivo 
-O objetivo principal do projeto foi construir uma fonte de tensão ajustável, que converte corrente alternada (AC) em correte contínua(DC), funcionando na faixa de 3 a 12 V e 100mA. 
+### Objetivo
+O objetivo principal deste projeto foi construir uma fonte de tensão ajustável, que converte corrente alternada (AC) em corrente contínua (DC), operando na faixa de 3 a 12 V e 100 mA.
+
+### Teoria
+
+#### Tensão Alternada e Transformador
+Inicialmente, a tensão varia ao longo do tempo na forma de uma senoide:
+
+(Mostrar gráfico)
+
+Ao passar pelo transformador, a tensão é reduzida, respeitando a relação:
+
+\[
+\frac{V_E}{V_S} = \frac{N1}{N2}
+\]
+
+Ou seja, a amplitude da onda é reduzida.
+
+#### Ponte Retificadora e Capacitor
+A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada em corrente contínua, ou seja, a tensão será sempre positiva.
+
+(Mostrar gráfico)
+
+Contudo, apesar de não ser negativa, a tensão ainda sofre uma variação significativa. Portanto, devemos estabilizar a tensão contínua.
+
+(Mostrar gráfico)
+
+Para isso, utilizamos um capacitor. Esse componente tem como objetivo diminuir a variação da tensão e da corrente em altas frequências.
+
+Ao calcular a diferença entre o ponto mínimo e o ponto máximo da tensão, obtemos a chamada "tensão ripple" ($V_r$). A tensão ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito.
+
+(Mostrar gráfico da tensão ripple)
+
+#### Diodo Zener
+O papel do diodo Zener é eliminar as pequenas variações remanescentes da tensão, tornando o gráfico da tensão uma reta constante.
+
+#### Potenciômetro
+O potenciômetro é um resistor de resistência ajustável. No circuito, sua função é regular o valor da tensão. No nosso caso, o intervalo de variação será de 3 a 12 V.
+
+### Cálculos
+
+#### Tensão de Saída
+Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_S \approx 18V$.
+
+Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo consome aproximadamente 0,7V. Em cada ciclo, dois diodos são usados, resultando em uma queda total de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_S = 16,6V$.
+
+#### Cálculo da Capacitância
+A capacitância pode ser obtida através da seguinte equação:
+
+\[
+C = \frac{I}{f \cdot V_{ripple}}
+\]
+
+Sabemos que $f = 120Hz$, pois durante o processo de retificação de onda, o período $T$ da onda é reduzido pela metade e, como $f = \frac{1}{T}$, a frequência após a retificação é $f = \frac{2}{T}$.
+
+##### Calculo do Ripple
+Ainda para o cálculo da capacitância, devemos calcular a tensão ripple da função de onda. O ripple é, basicamente, a diferença entre a tensão máxima $V_{max}$ e tensão mínima $V_{min}$, contudo, uma maneira mais fácil de calcular a porcentagem relativa a tensão $V_{S'}$ que desejamos para o ripple. Para melhores resultados, queremos que o ripple não seja superior à 10% de $V_{S'}$. Logo: 
+
+$V_{ripple} = 0,1*V_{S'} = 1,66V$ 
 
 
-### Teoria 
-
-#### Tensão alternada e Transformador
-Inicialmente a tensão varia ao longo do tempo na forma de uma senoide: 
-
-(Mostrar gráfico); 
-
-Ao passar pelo transformador, a tensão é reduzida, respeitando a relação 
-
-$\frac{V_{E}}{V_{S}} = N1/N2$ (i); 
-
-Ou seja, a amplitude da onda é reduzida. 
-
-
-
-#### Ponte retificadora e Capacitor: 
-A ponte retificadora é formada por 4 diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada em corrente contínua. Ou seja, a tensão será sempre positiva. 
-
-(Mostrar gráfico); 
-
-
-Contudo, apesar de não ser negativa, a tensão ainda sofre uma variação muito significativa. Portanto, devemos deixar a tensão contínua. 
-
-(Gráfico)
-
-
-Para tal, utilizou-se o capacitor. Esse componente tem como objetivo diminuir a variação da tensão e da corrente em altas frequências. 
-
-Ao calcular a difença entre o ponto mínimo da tensão e o ponto máximo, obtemos a chamada "tensão ripple" ($V_{r}$). A tensão Ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito. 
-
-
-(Mostrar o gŕafico Ripple)
-
-
-#### Diodo Zener 
-O papel do Zener é eliminar as pequenas variações remanascentes da tensão. Ou seja, torna o gráfico da tensão uma reta constante. 
-
-#### Potenciômetro 
-O potenciômetro é um resistor de resistência ajustável. No circuito, sua função consiste em regular o valor da tensão. No caso, o intervalo de variação será de 3 a 12V. 
-
-
-### Cálculos 
-
-#### Tensão de saída
-Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_{S} \approx 18V$. 
-
-Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo usa, aproximadamente, 0.7V. Em cada ciclo, dois diodos são usados, portanto, a queda de tensão total é de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_{S} = 16,6V$. 
-
-
-#### Cálculo da capacitância 
-A capacitância pode ser obtida através da seguinte função: 
-
-C = \frac{I}{f*V_{ripple}}
-
-
-
-
-
+##### Cálculo da corrente 
+O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto, utilizamos o valor fornecido pela simulação do FALSTAD, tal que I = 
 
 
