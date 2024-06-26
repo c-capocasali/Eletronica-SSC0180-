@@ -12,9 +12,9 @@ Inicialmente, a tensão varia ao longo do tempo na forma de uma senoide:
 
 Ao passar pelo transformador, a tensão é reduzida, respeitando a relação:
 
-\[
-\frac{V_E}{V_S} = \frac{N1}{N2}
-\]
+
+$\frac{V_E}{V_S} = \frac{N1}{N2}$
+
 
 Ou seja, a amplitude da onda é reduzida.
 
@@ -49,9 +49,9 @@ Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos
 #### Cálculo da Capacitância
 A capacitância pode ser obtida através da seguinte equação:
 
-\[
-C = \frac{I}{f \cdot V_{ripple}}
-\]
+
+$C = \frac{I}{f \cdot V_{ripple}}$
+
 
 Sabemos que $f = 120Hz$, pois durante o processo de retificação de onda, o período $T$ da onda é reduzido pela metade e, como $f = \frac{1}{T}$, a frequência após a retificação é $f = \frac{2}{T}$.
 
