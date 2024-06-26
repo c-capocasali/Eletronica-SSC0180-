@@ -13,7 +13,7 @@ Inicialmente a tensão varia ao longo do tempo na forma de uma senoide:
 
 Ao passar pelo transformador, a tensão é reduzida, respeitando a relação 
 
-$V_{E}/V_{S} = N1/N2$(i); 
+$frac{V_{E}}{V_{S}} = N1/N2$(i); 
 
 Ou seja, a amplitude da onda é reduzida. 
 
@@ -45,7 +45,8 @@ O papel do Zener é eliminar as pequenas variações remanascentes da tensão. O
 O potenciômetro é um resistor de resistência ajustável. No circuito, sua função consiste em regular o valor da tensão. No caso, o intervalo de variação será de 3 a 12V. 
 
 
-#### Transistor  
+### Cálculos 
+Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_{S} \approx 18$.  
 
 
 
