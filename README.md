@@ -63,7 +63,7 @@ $V_{ripple} = 0,1*V_{S'} = 1,66V$
 ##### Tensões Máxima e Mínima do Circuito 
 De posse da porcentagem que desejamos para o Ripple, podemos calcular também a tensão máxima e mínima do circuito, tal que: 
 
-$v_{max} = V_{S'}(1-\frac{%ripple}{2})$ 
+$v_{max} = V_{S'}(1-\frac{ripple}{2})$ 
 
 Substituindo os valores, temos: 
 $v_{max} = 16,6\cdot(1-\frac{10}{100\cdot2})$ 
