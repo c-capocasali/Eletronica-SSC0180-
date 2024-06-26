@@ -13,7 +13,7 @@ Inicialmente a tensão varia ao longo do tempo na forma de uma senoide:
 
 Ao passar pelo transformador, a tensão é reduzida, respeitando a relação 
 
-(Colocar a fórmula da relação dos transformadores) (i); 
+$V_{E}/V_{S} = N1/N2$(i); 
 
 Ou seja, a amplitude da onda é reduzida. 
 
