@@ -13,7 +13,7 @@ Inicialmente a tensão varia ao longo do tempo na forma de uma senoide:
 
 Ao passar pelo transformador, a tensão é reduzida, respeitando a relação 
 
-$frac{V_{E}}{V_{S}} = N1/N2$(i); 
+$\frac{V_{E}}{V_{S}} = N1/N2$ (i); 
 
 Ou seja, a amplitude da onda é reduzida. 
 
@@ -32,7 +32,7 @@ Contudo, apesar de não ser negativa, a tensão ainda sofre uma variação muito
 
 Para tal, utilizou-se o capacitor. Esse componente tem como objetivo diminuir a variação da tensão e da corrente em altas frequências. 
 
-Ao calcular a difença entre o ponto mínimo da tensão e o ponto máximo, obtemos a chamada "tensão ripple" (Tr). A tensão Ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito. 
+Ao calcular a difença entre o ponto mínimo da tensão e o ponto máximo, obtemos a chamada "tensão ripple" ($V_{r}$). A tensão Ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito. 
 
 
 (Mostrar o gŕafico Ripple)
@@ -46,7 +46,19 @@ O potenciômetro é um resistor de resistência ajustável. No circuito, sua fun
 
 
 ### Cálculos 
-Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_{S} \approx 18$.  
+
+#### Tensão de saída
+Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_{S} \approx 18V$. 
+
+Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo usa, aproximadamente, 0.7V. Em cada ciclo, dois diodos são usados, portanto, a queda de tensão total é de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_{S} = 16,6V$. 
+
+
+#### Cálculo da capacitância 
+A capacitância pode ser obtida através da seguinte função: 
+
+C = \frac{I}{f*V_{ripple}}
+
+
 
 
 
