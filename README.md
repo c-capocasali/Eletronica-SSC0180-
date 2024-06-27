@@ -25,7 +25,7 @@ $N1 =$ Número de espiras da entrada
 
 $N2 =$ Número de espiras da saida
 
-É importante salientar que no Brasil, por padrão, a frequência da senoide é de $60Hz$
+É importante salientar que no Brasil, por padrão, a frequência da tensão das tomadas é de $60Hz$
 
 #### Ponte Retificadora e Capacitor
 A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada(AC) em corrente contínua(DC), ou seja, a tensão será sempre positiva.
