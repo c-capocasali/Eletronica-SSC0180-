@@ -23,17 +23,14 @@ Ou seja, a amplitude da onda é reduzida.
 #### Ponte Retificadora e Capacitor
 A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada(AC) em corrente contínua(DC), ou seja, a tensão será sempre positiva.
 
-(Mostrar gráfico)
-
 Contudo, apesar de não ser negativa, a tensão ainda sofre uma variação significativa. Portanto, devemos estabilizar a tensão contínua.
 
-(Mostrar gráfico)
-
+![ponte_diodo](imagens/ponte_diodo.png)
 Para isso, utilizamos um capacitor. Esse componente tem como objetivo diminuir a variação da tensão e da corrente em altas frequências.
 
 Ao calcular a diferença entre o ponto mínimo e o ponto máximo da tensão, obtemos a chamada "tensão ripple" ($V_r$). A tensão ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito.
 
-(Mostrar gráfico da tensão ripple)
+![Tensão_ripple](imagens/ripple.png)
 
 #### Diodo Zener
 O papel do diodo Zener é eliminar as pequenas variações remanescentes da tensão, tornando o gráfico da tensão uma reta constante.
@@ -71,7 +68,7 @@ $V_{max} = V_{S'}(1-\frac{ripple}{2})$  (iv)
 
 Substituindo os valores, temos: 
 
-$v_{max} = 16,6\cdot(1-\frac{10}{100\cdot2})$ 
+$V_{max} = 16,6\cdot(1-\frac{10}{100\cdot2})$ 
 
 
 
@@ -81,7 +78,11 @@ O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto
 
 Com os dados obtidos, é possível substituir as informações na equação (ii), obtemos: 
 
-$C = \frac{108,2}{120\cdot1,66} \approx 543,172$ 
+$C = \frac{108,2}{120\cdot1,66} \approx 543,172V$ 
 
 Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $25,19%$ de capacitância a mais do valor teórico calculado acima. 
+
+### FALSTAD 
+
+
 
