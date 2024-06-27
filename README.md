@@ -85,7 +85,7 @@ Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $2
 
 ### FALSTAD 
 
-(imagens/sim_falstad.jpeg)
+![sim_falstad](imagens/sim_falstad.jpeg)
 
 
 [Link do circuito](https://tinyurl.com/2m9j32hg)
