@@ -76,7 +76,11 @@ $V_{max} = V_{S'}(1-\frac{ripple}{2})$  (iv)
 
 Substituindo os valores, temos: 
 
-$V_{max} = 16,6\cdot(1-\frac{10}{100\cdot2})$ 
+$V_{max} = 16,6\cdot(1-\frac{10}{100\cdot2}) = 15,77V$ 
+
+Para a tensão mínima, obtemos: 
+
+$V_{min} = V_{max} - V{r} = 14,11V$
 
 
 
