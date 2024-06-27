@@ -17,10 +17,10 @@ $\frac{V_E}{V_S} = \frac{N1}{N2}$  (i)
 
 
 Onde: 
-$V_{E} = $ Tensão de entrada 
-$V_{S} = $ Tensão de saída
-$N1 = $ Número de espiras da entrada 
-$N2 = $ Número de espiras da saida
+$V_{E} =$ Tensão de entrada 
+$V_{S} =$ Tensão de saída
+$N1 =$ Número de espiras da entrada 
+$N2 =$ Número de espiras da saida
 
 É importante salientar que no Brasil, por padrão, a frequência da senoide é de $60Hz$
 
