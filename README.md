@@ -26,6 +26,7 @@ A ponte retificadora é formada por quatro diodos. O principal objetivo dessa pa
 Contudo, apesar de não ser negativa, a tensão ainda sofre uma variação significativa. Portanto, devemos estabilizar a tensão contínua.
 
 ![ponte_diodo](imagens/ponte_diodo.png)
+
 Para isso, utilizamos um capacitor. Esse componente tem como objetivo diminuir a variação da tensão e da corrente em altas frequências.
 
 Ao calcular a diferença entre o ponto mínimo e o ponto máximo da tensão, obtemos a chamada "tensão ripple" ($V_r$). A tensão ripple será uma medida muito relevante futuramente para a resolução dos cálculos do circuito.
@@ -84,5 +85,8 @@ Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $2
 
 ### FALSTAD 
 
+(imagens/sim_falstad.jpeg)
 
+
+[Link do circuito](https://tinyurl.com/2m9j32hg)
 
