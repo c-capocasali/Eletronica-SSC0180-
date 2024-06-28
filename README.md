@@ -115,7 +115,12 @@ Desta forma, o menor capacitor necessário é de 365,53 \mu F.
 ![eagle](imagens/eagle.jpeg)
 
 
+
 ### Vídeo do projeto 
+https://github.com/c-capocasali/Eletronica-SSC0180-/assets/131386448/e3ab1b0e-8eca-40f3-8c7b-e291b7761d94
+
+
+
 
 
 ### Membros do Grupo 
