@@ -42,7 +42,7 @@ $N1 =$ Número de espiras da entrada
 $N2 =$ Número de espiras da saida
 
 Para o projeto, utilizamos um transformador de $25V$. Por padrão, a tensão das tomadas é de $127V$, mas essa é a tensão rms ($V_{rms}$). Para calcular a tensão de pico, que será nossa tensão de entrada, temos que efetuar a seguinte operação: 
-$V_{E} = V_{pico} = V_{rms} \cdot sqrt(2) \approx 179V$
+$V_{E} = V_{pico} = V_{rms} \cdot \sqrt{2} \approx 179V$
 
 Também é importante salientar que no Brasil, por padrão, a frequência da tensão das tomadas é de $60Hz$
 
