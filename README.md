@@ -93,7 +93,7 @@ O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto
 
 Com os dados obtidos, é possível substituir as informações na equação (ii), obtemos: 
 
-$C = \frac{112,3}{120\cdot2,36} \approx 543,172\muF$ 
+$C = \frac{112,3}{120\cdot2,36} \approx 543,172\mu F$ 
 
 Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $25,19%$ de capacitância a mais do valor teórico calculado acima. 
 
