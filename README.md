@@ -3,6 +3,9 @@
 ### Objetivo
 O objetivo principal deste projeto foi construir uma fonte de tensão ajustável, que converte corrente alternada (AC) em corrente contínua (DC), operando na faixa de 3 a 12 V e 100 mA.
 
+### Componentes 
+
+
 ### Teoria
 
 #### Tensão Alternada e Transformador
@@ -93,16 +96,28 @@ O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto
 
 Com os dados obtidos, é possível substituir as informações na equação (ii), obtemos: 
 
-$C = \frac{112,3}{120\cdot2,36} \approx 543,172\mu F$ 
+$C = \frac{112,3}{120\cdot2,36} \approx 365,53\mu F$ 
 
-Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $25,19%$ de capacitância a mais do valor teórico calculado acima. 
+Desta forma, o menor capacitor necessário é de 365,53 \mu F. 
+
+É importante salientar que o capacitor que adquirimos possui uma capacidade muito superior à recomendada. Isso ocorreu porque, inicialmente, projetamos o circuito para operar com uma tensão $V_{S} = 18V$. No entanto, não conseguimos encontrar um transformador com essa especificação. Apesar de não ser a solução mais econômica devido a esse contratempo com o capacitor, o projeto funciona adequadamente.
 
 ### FALSTAD 
 
 ![sim_falstad](imagens/sim_falstad.jpeg)
 
 
-[Link do circuito](https://tinyurl.com/2m9j32hg)
+[Link do circuito](https://tinyurl.com/2fdwl3qa)
+
+
+
+### Membros do Grupo 
+|Nomes|Nº USP|
+|-----|------|
+|Caio Capocasali | 12541733|
+|Driely Fernanda Oliveira de Abreu | 11879575|
+|Gustavo Alvares Andó | 15457345|
+|Maria Clara de Souza Capato | 15475294|
 
 
 ### Vídeo do projeto 
