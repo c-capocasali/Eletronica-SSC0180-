@@ -101,3 +101,7 @@ Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $2
 
 [Link do circuito](https://tinyurl.com/2m9j32hg)
 
+
+### Vídeo do projeto 
+![video](fonte.mp4)
+
