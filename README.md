@@ -7,15 +7,15 @@ O objetivo principal deste projeto foi construir uma fonte de tensão ajustável
 |Valores por unidade|Qntd| Componentes|
 |-------|----|------------|
 |R$ 0.20|4|Diodo 1N4007|
-|R$ 5.8|1| Capacitor $680 \mu F$|
-|R$ 0.5 |1| LED|
-|R$ 0.07|1| Resistor 3.3K$\ohm$|
-|R$ 0.07|1| Resistor 4.7K|
-|R$ 0.07|1| Resistor 120|
-|R$ 0.07|1| Resistor 1K|
-|R$ 7.00|1| Potenciômetro 10K|
+|R$ 5.80|1| Capacitor $680 \mu F$|
+|R$ 0.50 |1| LED|
+|R$ 0.07|1| Resistor $3.3K \ohm$|
+|R$ 0.07|1| Resistor $4.7K \ohm$|
+|R$ 0.07|1| Resistor $120 \ohm$|
+|R$ 0.07|1| Resistor $1K \ohm$|
+|R$ 7.00|1| Potenciômetro $10K \ohm$|
 |R$ 0.44|1| Transistor BC368|
-|R$ 7.00|1| Jumper MachoxMacho|
+|R$ 7.00|1| Jumper Macho x Macho|
 
 
 
