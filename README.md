@@ -6,6 +6,7 @@ O objetivo principal deste projeto foi construir uma fonte de tensão ajustável
 ### Componentes 
 
 
+
 ### Teoria
 
 #### Tensão Alternada e Transformador
@@ -28,7 +29,7 @@ $N1 =$ Número de espiras da entrada
 
 $N2 =$ Número de espiras da saida
 
-Para o projeto, utilizamos um transformador de $25V$. Por padrão, a tensão das tomadas é de %127V%, mas essa é a tensão rms ($V_{rms}$). Para calcular a tensão de pico, que será nossa tensão de entrada, temos que efetuar a seguinte operação: 
+Para o projeto, utilizamos um transformador de $25V$. Por padrão, a tensão das tomadas é de $127V$, mas essa é a tensão rms ($V_{rms}$). Para calcular a tensão de pico, que será nossa tensão de entrada, temos que efetuar a seguinte operação: 
 $V_{E} = V_{pico} = V_{rms} \cdot sqrt(2) \approx 179V$
 
 Também é importante salientar que no Brasil, por padrão, a frequência da tensão das tomadas é de $60Hz$
@@ -55,7 +56,7 @@ O potenciômetro é um resistor de resistência ajustável. No circuito, sua fun
 ### Cálculos
 
 #### Tensão de Saída
-Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_S \approx 18V$.
+Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_S \approx 25V$.
 
 Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo consome aproximadamente 0,7V. Em cada ciclo, dois diodos são usados, resultando em uma queda total de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_{S} = 23,6V$.
 
@@ -104,11 +105,17 @@ Desta forma, o menor capacitor necessário é de 365,53 \mu F.
 
 ### FALSTAD 
 
-![sim_falstad](imagens/sim_falstad.jpeg)
+![sim_falstad](imagens/sim_falstad.png)
 
 
 [Link do circuito](https://tinyurl.com/2fdwl3qa)
 
+
+### EAGLE
+![eagle](imagens/eagle.jpeg)
+
+
+### Vídeo do projeto 
 
 
 ### Membros do Grupo 
@@ -120,5 +127,4 @@ Desta forma, o menor capacitor necessário é de 365,53 \mu F.
 |Maria Clara de Souza Capato | 15475294|
 
 
-### Vídeo do projeto 
 
