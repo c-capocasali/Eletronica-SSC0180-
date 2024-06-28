@@ -25,7 +25,10 @@ $N1 =$ Número de espiras da entrada
 
 $N2 =$ Número de espiras da saida
 
-É importante salientar que no Brasil, por padrão, a frequência da tensão das tomadas é de $60Hz$
+Para o projeto, utilizamos um transformador de $25V$. Por padrão, a tensão das tomadas é de %127V%, mas essa é a tensão rms ($V_{rms}$). Para calcular a tensão de pico, que será nossa tensão de entrada, temos que efetuar a seguinte operação: 
+$V_{E} = V_{pico} = V_{rms} \cdot sqrt(2) \approx 179V$
+
+Também é importante salientar que no Brasil, por padrão, a frequência da tensão das tomadas é de $60Hz$
 
 #### Ponte Retificadora e Capacitor
 A ponte retificadora é formada por quatro diodos. O principal objetivo dessa parte do circuito é converter a corrente alternada(AC) em corrente contínua(DC), ou seja, a tensão será sempre positiva.
@@ -51,7 +54,7 @@ O potenciômetro é um resistor de resistência ajustável. No circuito, sua fun
 #### Tensão de Saída
 Inicialmente, medimos com o auxílio de um multímetro o valor de saída $V_S \approx 18V$.
 
-Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo consome aproximadamente 0,7V. Em cada ciclo, dois diodos são usados, resultando em uma queda total de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_{S} = 16,6V$.
+Após passar pela ponte de diodos, há uma queda de tensão. Por serem compostos majoritariamente de silício, cada diodo consome aproximadamente 0,7V. Em cada ciclo, dois diodos são usados, resultando em uma queda total de 1,4V. Dessa forma, a nova tensão nos capacitores é de $V'_{S} = 23,6V$.
 
 #### Cálculo da Capacitância
 A capacitância pode ser obtida através da seguinte equação:
@@ -67,30 +70,30 @@ Sabemos que $f = 120Hz$, pois durante o processo de retificação de onda, o per
 ##### Calculo do Ripple
 Ainda para o cálculo da capacitância, devemos calcular a tensão ripple da função de onda. O ripple é, basicamente, a diferença entre a tensão máxima $V_{max}$ e tensão mínima $V_{min}$, contudo, uma maneira mais fácil de calcular a porcentagem relativa a tensão $V_{S'}$ que desejamos para o ripple. Para melhores resultados, queremos que o ripple não seja superior à 10% de $V_{S'}$. Logo: 
 
-$V_{r} = 0,1 \cdot V'_{S} = 1,66V$  (iii)
+$V_{r} = 0,1 \cdot V'_{S} = 2,36V$  (iii)
 
 ##### Tensões Máxima e Mínima do Circuito 
 De posse da porcentagem que desejamos para o Ripple, podemos calcular também a tensão máxima e mínima do circuito, tal que: 
 
-$V_{max} = V_{S'}(1-\frac{ripple}{2})$  (iv)
+$V_{max} = V'_{S}(1-\frac{ripple}{2})$  (iv)
 
 Substituindo os valores, temos: 
 
-$V_{max} = 16,6\cdot(1-\frac{10}{100\cdot2}) = 15,77V$ 
+$V_{max} = 23,6\cdot(1-\frac{10}{100\cdot2}) = 22,42V$ 
 
 Para a tensão mínima, obtemos: 
 
-$V_{min} = V_{max} - V{r} = 14,11V$
+$V_{min} = V_{max} - V{r} = 20,06V$
 
 
 
 ##### Cálculo da corrente 
-O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto, utilizamos o valor fornecido pela simulação do FALSTAD, tal que $I \approx 108,2mA$. 
+O cálculo da corrente total do circuito seria extremamente trabalhoso, portanto, utilizamos o valor fornecido pela simulação do FALSTAD, tal que $I \approx 112,3mA$. 
 
 
 Com os dados obtidos, é possível substituir as informações na equação (ii), obtemos: 
 
-$C = \frac{108,2}{120\cdot1,66} \approx 543,172V$ 
+$C = \frac{112,3}{120\cdot2,36} \approx 543,172\muF$ 
 
 Como queriámos ter uma margem de erro confíavel, compramos um capacitor com $25,19%$ de capacitância a mais do valor teórico calculado acima. 
 
